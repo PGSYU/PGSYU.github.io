@@ -37,16 +37,19 @@
     .navbar {
       background-color: #004080;
     }
-    .navbar-brand, .nav-link {
+    .navbar-brand,
+    .nav-link {
       color: #ffffff !important;
     }
-    .navbar-brand:hover, .nav-link:hover {
+    .navbar-brand:hover,
+    .nav-link:hover {
       color: #ffcc00 !important;
     }
 
-    /* Hero Section (solid color instead of an image) */
+    /* Hero Section (with background image) */
     .hero {
-      background-color: #004080; /* changed from an image to a color */
+      background: url("images/hero_background.jpg") no-repeat center center;
+      background-size: cover;
       min-height: 100vh;
       position: relative;
       display: flex;
@@ -56,8 +59,13 @@
       text-align: center;
     }
     .hero-overlay {
-      /* remove background overlay since we no longer use an image */
-      display: none;
+      background-color: rgba(0, 0, 128, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
     }
     .hero-content {
       position: relative;
@@ -193,7 +201,7 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <!-- No overlay used here due to solid color -->
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <!-- Pakistani Flag -->
       <img
@@ -225,7 +233,7 @@
       <div class="row gallery-images">
         <div class="col-md-6">
           <img
-            src="images/campus_view.jpg"
+            src="campus_view.jpg"
             alt="Beautiful view of YorkU campus"
           />
         </div>
