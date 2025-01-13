@@ -33,17 +33,18 @@
       scroll-behavior: smooth;
     }
 
-    /* Navigation Bar */
+    /* Navigation Bar (white background, dark text) */
     .navbar {
-      background-color: #004080;
+      background-color: #ffffff !important;
+      border-bottom: 1px solid #ddd;
     }
     .navbar-brand,
     .nav-link {
-      color: #ffffff !important;
+      color: #333 !important; /* Dark text color */
     }
     .navbar-brand:hover,
     .nav-link:hover {
-      color: #ffcc00 !important;
+      color: #004080 !important; /* Slight highlight on hover */
     }
 
     /* Hero Section (with background image) */
@@ -90,28 +91,6 @@
       color: #555;
     }
 
-    /* Gallery/Community Section */
-    #gallery {
-      padding: 60px 0;
-      background-color: #ffffff;
-    }
-    #gallery h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .gallery-images .col-md-6 {
-      margin-bottom: 30px;
-    }
-    .gallery-images img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    .gallery-images img:hover {
-      transform: scale(1.05);
-    }
-
     /* Contact Section */
     #contact {
       padding: 60px 0;
@@ -121,23 +100,24 @@
       margin-bottom: 40px;
     }
 
-    /* Footer */
+    /* Footer (white background, dark text) */
     footer {
-      background-color: #004080;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #333;
       padding: 20px 0;
       text-align: center;
+      border-top: 1px solid #ddd;
     }
     footer a {
-      color: #ffffff;
+      color: #333;
       margin: 0 10px;
       font-size: 1.2rem;
     }
     footer a:hover {
-      color: #ffcc00;
+      color: #004080;
     }
     .footer-logos img {
-      width: 80px;
+      width: 30px; /* smaller logo size */
       margin: 0 10px;
       vertical-align: middle;
     }
@@ -156,15 +136,15 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- PGS Logo -->
+        <!-- PGS Logo (smaller size) -->
         <img
           src="images/pgs_logo.png"
           alt="PGS Logo"
-          width="50"
-          height="50"
+          width="30"
+          height="30"
           class="me-2"
         />
         PGS Association
@@ -178,7 +158,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" style="color: #333;"></span>
       </button>
       <div
         class="collapse navbar-collapse justify-content-end"
@@ -187,9 +167,6 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#coming-soon">Coming Soon</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Us</a>
@@ -203,11 +180,11 @@
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <!-- Pakistani Flag -->
+      <!-- Pakistani Flag (smaller size if desired) -->
       <img
         src="images/pakistani_flag.png"
         alt="Pakistani Flag"
-        width="80"
+        width="60"
         class="mb-4"
       />
       <h1 class="display-4 fw-bold">Welcome to PGS</h1>
@@ -222,28 +199,6 @@
     <div class="container">
       <h2>We’re Working On Something Great!</h2>
       <p>Stay tuned for updates—exciting things are coming your way!</p>
-    </div>
-  </section>
-
-  <!-- Gallery/Community Section -->
-  <section id="gallery">
-    <div class="container">
-      <h2>Our Community</h2>
-      <!-- Only showing the remaining images in 2 columns -->
-      <div class="row gallery-images">
-        <div class="col-md-6">
-          <img
-            src="campus_view.jpg"
-            alt="Beautiful view of YorkU campus"
-          />
-        </div>
-        <div class="col-md-6">
-          <img
-            src="images/cultural_event.jpg"
-            alt="Pakistani cultural event"
-          />
-        </div>
-      </div>
     </div>
   </section>
 
@@ -287,7 +242,7 @@
       </div>
       <p>&copy; 2025 Pakistani Graduate Students (PGS) Association</p>
 
-      <!-- Logos in Footer (PGS, YorkU, and Pakistani Flag) -->
+      <!-- Logos in Footer (smaller size) -->
       <div class="footer-logos mt-3">
         <img
           src="images/pgs_logo.png"
