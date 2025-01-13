@@ -35,6 +35,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             text-align: center;
         }
         .hero-overlay {
@@ -44,6 +45,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            z-index: 0;
         }
         .hero-content {
             position: relative;
@@ -59,6 +61,14 @@
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
+        }
+        footer a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        footer a:hover {
+            color: #ffcc00;
         }
         /* Constitution Scrollable */
         .constitution-content {
@@ -82,7 +92,11 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">PGS Association</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- PGS Logo -->
+                <img src="path_to_pgs_logo.png" alt="PGS Logo" width="40" height="40" class="me-2">
+                PGS Association
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -110,6 +124,7 @@
     <section class="hero d-flex align-items-center justify-content-center">
         <div class="hero-overlay"></div>
         <div class="hero-content">
+            <img src="path_to_pakistani_flag.png" alt="Pakistani Flag" width="100" class="mb-4">
             <h1 class="display-4">Pakistani Graduate Students</h1>
             <p class="lead">Building a Supportive Community at York University</p>
             <a href="#membership" class="btn btn-warning btn-lg mt-3">Learn More</a>
@@ -120,7 +135,11 @@
     <section id="membership" class="bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Membership Benefits</h2>
-            <div class="row">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1584697964154-3c7e80f1ecf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
+                        class="img-fluid rounded mb-4 mb-md-0" alt="Membership Benefits">
+                </div>
                 <div class="col-md-6">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
@@ -137,17 +156,13 @@
                         </li>
                         <li class="list-group-item">
                             <i class="fas fa-calendar-alt me-2 text-primary"></i>
-                            <strong>Regular Events and Workshops:</strong> Participate in activities for social gatherings.
+                            <strong>Regular Events and Workshops:</strong> Participate in activities for social gatherings and professional development.
                         </li>
                         <li class="list-group-item">
                             <i class="fas fa-bullhorn me-2 text-primary"></i>
                             <strong>Advocacy and Representation:</strong> Voice your concerns and contribute to initiatives that address the needs of Pakistani graduate students at York University.
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1584697964154-3c7e80f1ecf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
-                        class="img-fluid rounded" alt="Membership Benefits">
                 </div>
             </div>
         </div>
@@ -169,11 +184,11 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Help new Pakistani graduate students settle into university life and Toronto.</li>
                         <li class="list-group-item">Create study groups and academic support networks within different graduate programs.</li>
-                        <li class="list-group-item">Get to know other graduate students in various academic programs.</li>
-                        <li class="list-group-item">Connect students with successful York grad alumni working in their field for career guidance.</li>
-                        <li class="list-group-item">Organize social events that fit graduate students' schedules and interests (like dinner gatherings, coffee meetups, and family-friendly activities).</li>
-                        <li class="list-group-item">Help members with practical challenges like finding housing, understanding immigration processes, and job hunting.</li>
-                        <li class="list-group-item">Work with other university Pakistani faculty members to build stronger networks.</li>
+                        <li class="list-group-item">Facilitate networking among graduate students across various academic disciplines.</li>
+                        <li class="list-group-item">Connect students with successful YorkU alumni for career guidance.</li>
+                        <li class="list-group-item">Organize social events that fit graduate students' schedules and interests, such as dinner gatherings, coffee meetups, and family-friendly activities.</li>
+                        <li class="list-group-item">Provide assistance with practical challenges like finding housing, understanding immigration processes, and job hunting.</li>
+                        <li class="list-group-item">Collaborate with Pakistani faculty members at the university to build stronger academic and professional networks.</li>
                     </ul>
                 </div>
             </div>
@@ -195,7 +210,7 @@
                 <ul>
                     <li><strong>Orientation and Settling In:</strong> Assist new Pakistani graduate students in settling into university life and the city of Toronto.</li>
                     <li><strong>Academic Support:</strong> Create study groups and academic support networks within different graduate programs.</li>
-                    <li><strong>Networking:</strong> Facilitate connections among graduate students across various academic disciplines. Connect students with successful York graduate alumni for career guidance.</li>
+                    <li><strong>Networking:</strong> Facilitate connections among graduate students across various academic disciplines. Connect students with successful YorkU graduate alumni for career guidance.</li>
                     <li><strong>Social Engagement:</strong> Organize social events that accommodate graduate students’ schedules and interests, such as dinner gatherings, coffee meetups, and family-friendly activities.</li>
                     <li><strong>Practical Assistance:</strong> Help members with practical challenges, including finding housing, understanding immigration processes, and job hunting.</li>
                     <li><strong>Collaboration with Faculty:</strong> Work with Pakistani faculty members at the university to build stronger academic and professional networks.</li>
@@ -205,7 +220,7 @@
                 <p><strong>Eligibility:</strong></p>
                 <ul>
                     <li>Membership is open to all current Pakistani graduate students enrolled at York University.</li>
-                    <li>York graduate alumni and other Pakistanis in special cases.</li>
+                    <li>YorkU graduate alumni and other Pakistanis in special cases.</li>
                 </ul>
                 <p><strong>Admission:</strong></p>
                 <ul>
@@ -228,21 +243,28 @@
             <h2 class="text-center mb-5">Contact Us</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <form action="mailto:pakistanigraduatestudents@gmail.com" method="post" enctype="text/plain">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
+                    <div class="mt-4 text-center">
+                        <p>Follow us on Instagram:</p>
+                        <a href="https://www.instagram.com/pgs.yu/" target="_blank">
+                            <i class="fab fa-instagram fa-2x text-primary"></i>
+                        </a>
+                        <p class="mt-3">Email us at: <a href="mailto:pakistanigraduatestudents@gmail.com">pakistanigraduatestudents@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,11 +273,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="mb-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/pgs.yu/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
             <p>&copy; 2025 Pakistani Graduate Students (PGS) Association | York University</p>
-            <div>
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            <div class="mt-2">
+                <!-- YorkU Logo -->
+                <img src="path_to_yorku_logo.png" alt="YorkU Logo" width="100">
             </div>
         </div>
     </footer>
@@ -268,9 +295,13 @@
         document.querySelectorAll('a.nav-link').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70, // Adjust for fixed navbar height
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
