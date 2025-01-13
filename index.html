@@ -28,29 +28,25 @@
   <style>
     body {
       font-family: "Roboto", sans-serif;
-      scroll-behavior: smooth;
       margin: 0;
       padding: 0;
+      scroll-behavior: smooth;
     }
 
     /* Navigation Bar */
     .navbar {
       background-color: #004080;
     }
-    .navbar-brand,
-    .nav-link {
+    .navbar-brand, .nav-link {
       color: #ffffff !important;
     }
-    .navbar-brand:hover,
-    .nav-link:hover {
+    .navbar-brand:hover, .nav-link:hover {
       color: #ffcc00 !important;
     }
 
-    /* Hero Section */
+    /* Hero Section (solid color instead of an image) */
     .hero {
-      /* Replace with your preferred hero background image inside 'images' folder */
-      background: url("images/hero_background.jpg") no-repeat center center;
-      background-size: cover;
+      background-color: #004080; /* changed from an image to a color */
       min-height: 100vh;
       position: relative;
       display: flex;
@@ -60,13 +56,8 @@
       text-align: center;
     }
     .hero-overlay {
-      background-color: rgba(0, 0, 128, 0.5);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
+      /* remove background overlay since we no longer use an image */
+      display: none;
     }
     .hero-content {
       position: relative;
@@ -79,7 +70,7 @@
     /* Coming Soon Section */
     #coming-soon {
       padding: 60px 0;
-      background-color: #f0f0f0;
+      background-color: #f9f9f9;
       text-align: center;
     }
     #coming-soon h2 {
@@ -89,6 +80,28 @@
     #coming-soon p {
       font-size: 1.2rem;
       color: #555;
+    }
+
+    /* Gallery/Community Section */
+    #gallery {
+      padding: 60px 0;
+      background-color: #ffffff;
+    }
+    #gallery h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery-images .col-md-6 {
+      margin-bottom: 30px;
+    }
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.05);
     }
 
     /* Contact Section */
@@ -115,12 +128,10 @@
     footer a:hover {
       color: #ffcc00;
     }
-
-    /* Logo Row in Contact Section */
-    .logo-row img {
-      max-width: 70px;
-      height: auto;
+    .footer-logos img {
+      width: 80px;
       margin: 0 10px;
+      vertical-align: middle;
     }
 
     /* Responsive */
@@ -140,7 +151,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- PGS Logo from 'images' folder -->
+        <!-- PGS Logo -->
         <img
           src="images/pgs_logo.png"
           alt="PGS Logo"
@@ -170,6 +181,9 @@
             <a class="nav-link" href="#coming-soon">Coming Soon</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
@@ -179,9 +193,9 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-overlay"></div>
+    <!-- No overlay used here due to solid color -->
     <div class="hero-content">
-      <!-- Pakistani Flag in 'images' folder -->
+      <!-- Pakistani Flag -->
       <img
         src="images/pakistani_flag.png"
         alt="Pakistani Flag"
@@ -203,42 +217,48 @@
     </div>
   </section>
 
+  <!-- Gallery/Community Section -->
+  <section id="gallery">
+    <div class="container">
+      <h2>Our Community</h2>
+      <!-- Only showing the remaining images in 2 columns -->
+      <div class="row gallery-images">
+        <div class="col-md-6">
+          <img
+            src="images/campus_view.jpg"
+            alt="Beautiful view of YorkU campus"
+          />
+        </div>
+        <div class="col-md-6">
+          <img
+            src="images/cultural_event.jpg"
+            alt="Pakistani cultural event"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Us Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <p class="text-center">
-            For inquiries, feel free to reach out via email or follow us on
-            Instagram.
-          </p>
-          <div class="text-center my-4">
-            <a
-              href="mailto:pakistanigraduatestudents@gmail.com"
-              class="btn btn-primary me-3"
-              >Email Us</a
-            >
-            <a
-              href="https://www.instagram.com/pgs.yu/"
-              target="_blank"
-              class="btn btn-warning"
-            >
-              <i class="fab fa-instagram me-2"></i>Follow on Instagram
-            </a>
-          </div>
-
-          <!-- Logos in the contact section (optional) -->
-          <div class="text-center logo-row mt-5">
-            <!-- PGS Logo (again) -->
-            <img src="images/pgs_logo.png" alt="PGS Logo" />
-            <!-- Pakistani Flag -->
-            <img src="images/pakistani_flag.png" alt="Pakistani Flag" />
-            <!-- YorkU Logo -->
-            <img src="images/yorku_logo.png" alt="YorkU Logo" />
-          </div>
-
-        </div>
+      <p class="text-center">
+        For inquiries, feel free to reach out via email or follow us on Instagram.
+      </p>
+      <div class="text-center my-4">
+        <a
+          href="mailto:pakistanigraduatestudents@gmail.com"
+          class="btn btn-primary me-3"
+          >Email Us</a
+        >
+        <a
+          href="https://www.instagram.com/pgs.yu/"
+          target="_blank"
+          class="btn btn-warning"
+        >
+          <i class="fab fa-instagram me-2"></i>Follow on Instagram
+        </a>
       </div>
     </div>
   </section>
@@ -258,12 +278,20 @@
         ></a>
       </div>
       <p>&copy; 2025 Pakistani Graduate Students (PGS) Association</p>
-      <!-- YorkU Logo in the footer -->
-      <div class="mt-2">
+
+      <!-- Logos in Footer (PGS, YorkU, and Pakistani Flag) -->
+      <div class="footer-logos mt-3">
+        <img
+          src="images/pgs_logo.png"
+          alt="PGS Logo"
+        />
         <img
           src="images/yorku_logo.png"
           alt="YorkU Logo"
-          width="100"
+        />
+        <img
+          src="images/pakistani_flag.png"
+          alt="Pakistani Flag"
         />
       </div>
     </div>
@@ -273,7 +301,7 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
-  <!-- Optional: Smooth Scroll for anchor links -->
+  <!-- Smooth Scroll (optional) -->
   <script>
     document.querySelectorAll('a.nav-link').forEach((anchor) => {
       anchor.addEventListener('click', function (e) {
