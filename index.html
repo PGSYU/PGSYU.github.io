@@ -48,8 +48,8 @@
 
     /* Hero Section */
     .hero {
-      /* Replace with your preferred hero background image */
-      background: url("path_to_hero_background.jpg") no-repeat center center;
+      /* Replace with your preferred hero background image inside 'images' folder */
+      background: url("images/hero_background.jpg") no-repeat center center;
       background-size: cover;
       min-height: 100vh;
       position: relative;
@@ -116,6 +116,13 @@
       color: #ffcc00;
     }
 
+    /* Logo Row in Contact Section */
+    .logo-row img {
+      max-width: 70px;
+      height: auto;
+      margin: 0 10px;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .hero {
@@ -133,9 +140,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- PGS Logo (Replace the src with your logo path) -->
+        <!-- PGS Logo from 'images' folder -->
         <img
-          src="path_to_pgs_logo.png"
+          src="images/pgs_logo.png"
           alt="PGS Logo"
           width="50"
           height="50"
@@ -174,9 +181,9 @@
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <!-- Optional Pakistani Flag near the heading -->
+      <!-- Pakistani Flag in 'images' folder -->
       <img
-        src="path_to_pakistani_flag.png"
+        src="images/pakistani_flag.png"
         alt="Pakistani Flag"
         width="80"
         class="mb-4"
@@ -202,7 +209,6 @@
       <h2>Contact Us</h2>
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <!-- Simple mailto form or static info -->
           <p class="text-center">
             For inquiries, feel free to reach out via email or follow us on
             Instagram.
@@ -221,6 +227,17 @@
               <i class="fab fa-instagram me-2"></i>Follow on Instagram
             </a>
           </div>
+
+          <!-- Logos in the contact section (optional) -->
+          <div class="text-center logo-row mt-5">
+            <!-- PGS Logo (again) -->
+            <img src="images/pgs_logo.png" alt="PGS Logo" />
+            <!-- Pakistani Flag -->
+            <img src="images/pakistani_flag.png" alt="Pakistani Flag" />
+            <!-- YorkU Logo -->
+            <img src="images/yorku_logo.png" alt="YorkU Logo" />
+          </div>
+
         </div>
       </div>
     </div>
@@ -240,12 +257,11 @@
           ><i class="fab fa-instagram"></i
         ></a>
       </div>
-      <!-- Copyright -->
       <p>&copy; 2025 Pakistani Graduate Students (PGS) Association</p>
-      <!-- YorkU Logo -->
+      <!-- YorkU Logo in the footer -->
       <div class="mt-2">
         <img
-          src="path_to_yorku_logo.png"
+          src="images/yorku_logo.png"
           alt="YorkU Logo"
           width="100"
         />
