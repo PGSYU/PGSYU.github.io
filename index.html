@@ -1,309 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pakistani Graduate Students (PGS) Association</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+X5C6C+4zQZ5lFJYhC5XV9q+Iv6Hcl4B6+Tz6D+DxjxHlgrgX2xQqgkz2lmMbtVFF5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-        }
-        /* Navigation Bar */
-        .navbar {
-            background-color: #004080;
-        }
-        .navbar-brand, .nav-link {
-            color: #ffffff !important;
-        }
-        .navbar-brand:hover, .nav-link:hover {
-            color: #ffcc00 !important;
-        }
-        /* Hero Section */
-        .hero {
-            background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-            background-size: cover;
-            color: #ffffff;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-align: center;
-        }
-        .hero-overlay {
-            background-color: rgba(0, 0, 128, 0.6);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        /* Sections */
-        section {
-            padding: 60px 0;
-        }
-        /* Footer */
-        footer {
-            background-color: #004080;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer a {
-            color: #ffffff;
-            margin: 0 10px;
-            font-size: 1.2rem;
-        }
-        footer a:hover {
-            color: #ffcc00;
-        }
-        /* Constitution Scrollable */
-        .constitution-content {
-            max-height: 500px;
-            overflow-y: scroll;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f8f9fa;
-        }
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero {
-                height: 60vh;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PGS Association | Coming Soon</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4C+X5C6C+4zQZ5lFJYhC5XV9q+Iv6Hcl4B6+Tz6D+DxjxHlgrgX2xQqgkz2lmMbtVFF5A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #004080;
+    }
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #ffcc00 !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      /* Replace with your preferred hero background image */
+      background: url("path_to_hero_background.jpg") no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 128, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Coming Soon Section */
+    #coming-soon {
+      padding: 60px 0;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    #coming-soon h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #coming-soon p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 60px 0;
+    }
+    #contact h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+    footer a:hover {
+      color: #ffcc00;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 60vh;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <!-- PGS Logo -->
-                <img src="path_to_pgs_logo.png" alt="PGS Logo" width="40" height="40" class="me-2">
-                PGS Association
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- PGS Logo (Replace the src with your logo path) -->
+        <img
+          src="path_to_pgs_logo.png"
+          alt="PGS Logo"
+          width="50"
+          height="50"
+          class="me-2"
+        />
+        PGS Association
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#coming-soon">Coming Soon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Optional Pakistani Flag near the heading -->
+      <img
+        src="path_to_pakistani_flag.png"
+        alt="Pakistani Flag"
+        width="80"
+        class="mb-4"
+      />
+      <h1 class="display-4 fw-bold">Welcome to PGS</h1>
+      <p class="lead">
+        Bringing Pakistani Graduate Students Together at York University.
+      </p>
+    </div>
+  </section>
+
+  <!-- Coming Soon Section -->
+  <section id="coming-soon">
+    <div class="container">
+      <h2>We’re Working On Something Great!</h2>
+      <p>Stay tuned for updates—exciting things are coming your way!</p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Simple mailto form or static info -->
+          <p class="text-center">
+            For inquiries, feel free to reach out via email or follow us on
+            Instagram.
+          </p>
+          <div class="text-center my-4">
+            <a
+              href="mailto:pakistanigraduatestudents@gmail.com"
+              class="btn btn-primary me-3"
+              >Email Us</a
+            >
+            <a
+              href="https://www.instagram.com/pgs.yu/"
+              target="_blank"
+              class="btn btn-warning"
+            >
+              <i class="fab fa-instagram me-2"></i>Follow on Instagram
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#membership">Membership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mission">Mission & Goals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#constitution">Constitution</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero d-flex align-items-center justify-content-center">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="path_to_pakistani_flag.png" alt="Pakistani Flag" width="100" class="mb-4">
-            <h1 class="display-4">Pakistani Graduate Students</h1>
-            <p class="lead">Building a Supportive Community at York University</p>
-            <a href="#membership" class="btn btn-warning btn-lg mt-3">Learn More</a>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- Social Media Icons -->
+      <div class="mb-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a
+          href="https://www.instagram.com/pgs.yu/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <!-- Copyright -->
+      <p>&copy; 2025 Pakistani Graduate Students (PGS) Association</p>
+      <!-- YorkU Logo -->
+      <div class="mt-2">
+        <img
+          src="path_to_yorku_logo.png"
+          alt="YorkU Logo"
+          width="100"
+        />
+      </div>
+    </div>
+  </footer>
 
-    <!-- Membership Benefits Section -->
-    <section id="membership" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Membership Benefits</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1584697964154-3c7e80f1ecf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
-                        class="img-fluid rounded mb-4 mb-md-0" alt="Membership Benefits">
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <i class="fas fa-handshake me-2 text-primary"></i>
-                            <strong>Support for New Graduate Students:</strong> Assistance in navigating campus life, academic processes, and settling into York University.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-users me-2 text-primary"></i>
-                            <strong>Platform for a Support System:</strong> A community-driven platform to share experiences, provide mentorship, and offer guidance for academic and personal growth.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-network-wired me-2 text-primary"></i>
-                            <strong>Access to a Supportive Network:</strong> Connect with fellow Pakistani graduate students for collaboration, cultural exchange, and building lasting relationships.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-calendar-alt me-2 text-primary"></i>
-                            <strong>Regular Events and Workshops:</strong> Participate in activities for social gatherings and professional development.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-bullhorn me-2 text-primary"></i>
-                            <strong>Advocacy and Representation:</strong> Voice your concerns and contribute to initiatives that address the needs of Pakistani graduate students at York University.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Goals Section -->
-    <section id="mission">
-        <div class="container">
-            <h2 class="text-center mb-5">Mission & Goals</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Mission</h4>
-                    <p>
-                        To support Pakistani graduate students at York University by creating a welcoming community that understands their unique needs. We connect students for academic support, professional growth, and cultural activities while helping them navigate life as graduate students in Canada.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Goals</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Help new Pakistani graduate students settle into university life and Toronto.</li>
-                        <li class="list-group-item">Create study groups and academic support networks within different graduate programs.</li>
-                        <li class="list-group-item">Facilitate networking among graduate students across various academic disciplines.</li>
-                        <li class="list-group-item">Connect students with successful YorkU alumni for career guidance.</li>
-                        <li class="list-group-item">Organize social events that fit graduate students' schedules and interests, such as dinner gatherings, coffee meetups, and family-friendly activities.</li>
-                        <li class="list-group-item">Provide assistance with practical challenges like finding housing, understanding immigration processes, and job hunting.</li>
-                        <li class="list-group-item">Collaborate with Pakistani faculty members at the university to build stronger academic and professional networks.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Constitution Section -->
-    <section id="constitution" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Constitution</h2>
-            <div class="constitution-content">
-                <h4>Article I: Name</h4>
-                <p>The name of this organization shall be the <strong>Pakistani Graduate Students Association</strong>, hereinafter referred to as <strong>PGS</strong>.</p>
-
-                <h4>Article II: Mission</h4>
-                <p>To support Pakistani graduate students at York University by creating a welcoming community that understands their unique needs. PGS connects students for academic support, professional growth, and cultural activities while assisting them in navigating life as graduate students in Canada.</p>
-
-                <h4>Article III: Goals</h4>
-                <ul>
-                    <li><strong>Orientation and Settling In:</strong> Assist new Pakistani graduate students in settling into university life and the city of Toronto.</li>
-                    <li><strong>Academic Support:</strong> Create study groups and academic support networks within different graduate programs.</li>
-                    <li><strong>Networking:</strong> Facilitate connections among graduate students across various academic disciplines. Connect students with successful YorkU graduate alumni for career guidance.</li>
-                    <li><strong>Social Engagement:</strong> Organize social events that accommodate graduate students’ schedules and interests, such as dinner gatherings, coffee meetups, and family-friendly activities.</li>
-                    <li><strong>Practical Assistance:</strong> Help members with practical challenges, including finding housing, understanding immigration processes, and job hunting.</li>
-                    <li><strong>Collaboration with Faculty:</strong> Work with Pakistani faculty members at the university to build stronger academic and professional networks.</li>
-                </ul>
-
-                <h4>Article IV: Membership</h4>
-                <p><strong>Eligibility:</strong></p>
-                <ul>
-                    <li>Membership is open to all current Pakistani graduate students enrolled at York University.</li>
-                    <li>YorkU graduate alumni and other Pakistanis in special cases.</li>
-                </ul>
-                <p><strong>Admission:</strong></p>
-                <ul>
-                    <li>Prospective members must complete the official registration process and pay any applicable dues.</li>
-                </ul>
-                <p><strong>Rights and Responsibilities:</strong></p>
-                <ul>
-                    <li>Members have the right to attend all events, access resources, and vote in general meetings.</li>
-                    <li>Members are expected to uphold the mission and values of PGS and participate actively in its initiatives.</li>
-                </ul>
-
-                <!-- Add more articles as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Us</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form action="mailto:pakistanigraduatestudents@gmail.com" method="post" enctype="text/plain">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                    <div class="mt-4 text-center">
-                        <p>Follow us on Instagram:</p>
-                        <a href="https://www.instagram.com/pgs.yu/" target="_blank">
-                            <i class="fab fa-instagram fa-2x text-primary"></i>
-                        </a>
-                        <p class="mt-3">Email us at: <a href="mailto:pakistanigraduatestudents@gmail.com">pakistanigraduatestudents@gmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="mb-3">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/pgs.yu/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2025 Pakistani Graduate Students (PGS) Association | York University</p>
-            <div class="mt-2">
-                <!-- YorkU Logo -->
-                <img src="path_to_yorku_logo.png" alt="YorkU Logo" width="100">
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS and Dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Optional: Smooth Scroll for Older Browsers -->
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a.nav-link').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 70, // Adjust for fixed navbar height
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- Optional: Smooth Scroll for anchor links -->
+  <script>
+    document.querySelectorAll('a.nav-link').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 70, // offset for fixed navbar
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
